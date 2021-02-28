@@ -4,3 +4,6 @@ export const buttonRegText = 'Регистрация';
 export const buttonLogoutText = 'Выйти';
 export const promoText = 'Учебный проект студента\nфакультета Веб-разработки';
 export const footerText = 'Учебный проект Яндекс Практикум x BeatFilm';
+export const aboutMeName = 'Алексей';
+export const aboutMeProfession = 'бог';
+export const aboutMeDescription = 'молодец, красавчик, железный человек';

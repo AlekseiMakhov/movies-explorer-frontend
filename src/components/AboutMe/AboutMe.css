@@ -1,1 +1,52 @@
 @import url('../Main/Main.css');
+
+.about-me {
+    background-color: #fafafa;
+    width: 100%;
+    padding-top: 110px;
+}
+
+.about-me__container {
+    display: flex;
+    justify-content: space-between;
+    min-height: 327px;
+}
+
+.about-me__content {
+    max-width: 600px;
+}
+
+.about-me__links {
+    display: flex;
+}
+
+.about-me__link {
+    text-decoration: none;
+    line-height: 17px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.about-me__name {
+    font-size: 50px;
+    font-weight: 400;
+    line-height: 58px;
+}
+
+.about-me__profession {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 20px;
+}
+
+.about-me__description {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+}
+
+.about-me__photo {
+    width: 270px;
+    height: 327px;
+    border-radius: 10px;
+}
