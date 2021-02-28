@@ -7,17 +7,16 @@ const Footer = () => {
     return (
         <footer className='footer'>
             <p className='footer__text footer__text_type_project'>{footerText}</p>
-            <Divider bold={false}/>
             <div className='footer__container'>
                 <p className='footer__text'>©2021</p>
-                <ul className='footer__links-list'>
-                    <li className='footer__list-element'>
+                <ul className='footer__links'>
+                    <li className='footer__link'>
                         <a>{praktikumLink}</a>
                     </li>
-                    <li className='footer__list-element'>
+                    <li className='footer__link'>
                         <a>{githubLink}</a>
                     </li>
-                    <li className='footer__list-element'>
+                    <li className='footer__link'>
                         <a>{facebookLink}</a>
                     </li>
                 </ul>

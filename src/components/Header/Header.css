@@ -1,6 +1,6 @@
 .header {
     width: 100%;
-    background-color: #DDDEE3;
+    background-color: #dddee3;
     justify-items: center;
     height: 74px;
 }
@@ -29,7 +29,7 @@
     background-image: url(../../images/account-icon.svg);
     width: 26px;
     height: 30px;
-    background-color: #F4F4F4;
+    background-color: #f4f4f4;
     background-position: center;
     border-radius: 4px;
 }

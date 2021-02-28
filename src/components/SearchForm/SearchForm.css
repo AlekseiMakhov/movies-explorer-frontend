@@ -1,0 +1,9 @@
+.search-form {
+    width: 100% - 140px;
+    position: relative;
+    background-color: #f4f4f4;
+    border-radius: 40px;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 17px;
+}
