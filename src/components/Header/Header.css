@@ -1,4 +1,5 @@
 .header {
+    position: relative;
     width: 100%;
     background-color: #dddee3;
     justify-items: center;
@@ -6,13 +7,26 @@
 }
 
 .header__content {
-    max-width: 1280px;
+    position: relative;
+    height: 100%;
+    margin: 0 auto;
+    max-width: 1140px;
     min-width: 320px;
     display: flex;
-    padding: 0 70px;
+    justify-content: space-between;
+    padding: 0;
+    justify-self: center;
+    align-content: center;
+}
+
+.header__menu {
+    margin: auto 0;
+    display: flex;
+    position: relative;
 }
 
 .header__logo {
+    position: relative;
     margin: auto 0;
     width: 38px;
     height: 38px;

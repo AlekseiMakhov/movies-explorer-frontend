@@ -1,7 +1,7 @@
 //About me
 export const aboutMeName = 'Алексей';
-export const aboutMeProfession = 'бог';
-export const aboutMeDescription = 'молодец, красавчик, железный человек';
+export const aboutMeProfession = 'Front-end разработчик';
+export const aboutMeDescription = 'Я родился и живу в Саратове, закончил факультет экономики СГУ. У меня есть жена и дочь. Я люблю слушать музыку, а ещё увлекаюсь бегом. Недавно начал кодить. С 2015 года работал в компании «СКБ Контур». После того, как прошёл курс по веб-разработке, начал заниматься фриланс-заказами и ушёл с постоянной работы.';
 
 //About project
 export const aboutProjectSub1 = 'Дипломный проект включал 5 этапов';
@@ -12,6 +12,7 @@ export const aboutProjectText2 = 'У каждого этапа был мягки
 //Techs
 export const techsTitle = '7 технологий';
 export const techsText = 'На курсе веб-разработки мы освоили технологии, которые применили в дипломном проекте.';
+export const techsCaption = 'Технологии';
  
 //other
 export const regText = 'Регистрация';

@@ -1,10 +1,12 @@
 .portfolio {
+    position: relative;
     width: 100%;
-    padding: 0 70px;
+    padding-bottom: 125px;
+    padding-top: 100px;
 }
 
 .portfolio__title {
-    margin: 0;
+    margin: 0 0 30px;
     font-size: 18px;
     font-weight: 400;
     line-height: 20px;
@@ -12,6 +14,7 @@
 }
 
 .portfolio__link {
+    margin-top: 20px;
     display: flex;
     justify-content: space-between;
     border-bottom: 1px solid #e8e8e8;
@@ -24,14 +27,21 @@
 .portfolio__link-text {
     font-size: 30px;
     line-height: 50px;
+    padding-bottom: 19px;
     font-weight: 400;
     text-decoration: none;
+    cursor: pointer;
 }
 
 .portfolio__link-text:hover {
     opacity: .7;
 }
 
-.portfolio__link-text_type_arrow {
-    line-height: 60px;
+.portfolio__link-arrow {
+    width: 20px;
+    height: 60px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url(../../images/portfolio-arrow.svg);
 }

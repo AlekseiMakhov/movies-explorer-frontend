@@ -8,14 +8,11 @@ const Header = () => {
         <header className='header'>
             <div className='header__content'>
                 <a className='header__logo' src='#'></a>
-                {/* <Navigation />
-                <div className='header__account'>
-                    <p className='header__text_type_account'></p>
-                    <div className='header__account-icon'></div>
-                </div> */}
-
-                <p>{regText}</p>
-                <Button caption={buttonLoginText}/>
+                <div className='header__menu'>
+                    {/* <Navigation /> */}
+                    <p>{regText}</p>
+                    <Button caption={buttonLoginText} type='logout'/>
+                </div>
             </div>
         </header>
     )
