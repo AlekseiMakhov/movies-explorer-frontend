@@ -1,17 +1,23 @@
 import './Header.css';
-// import '../Navigation/Navigation';
+import cn from 'classnames';
 import Button from '../Button/Button';
 import { buttonLoginText, regText } from '../../configs/texts';
+import Navigation from '../Navigation/Navigation';
+import Account from '../Account/Account';
+import Logo from '../Logo/Logo';
+import { Link } from 'react-router-dom';
 
-const Header = () => {
+const Header = ({ type, loggedIn }) => {
     return (
-        <header className='header'>
+        <header className={cn('header', { 'header_type_light' : type === 'light' } )}>
             <div className='header__content'>
-                <a className='header__logo' src='#'></a>
+                <Logo />
                 <div className='header__menu'>
-                    {/* <Navigation /> */}
-                    <p>{regText}</p>
-                    <Button caption={buttonLoginText} type='logout'/>
+                    {loggedIn && <Navigation />}
+                    {!loggedIn && <Link className='header__link' to='/sign-up'>{regText}</Link>}
+                    {!loggedIn 
+                        ? <Button caption={buttonLoginText} type='login'/>
+                        : <Account />}
                 </div>
             </div>
         </header>

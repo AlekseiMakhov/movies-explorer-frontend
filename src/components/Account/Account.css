@@ -1,0 +1,28 @@
+.account {
+    margin: auto 0;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 50px;
+}
+
+.account__icon {
+    background-image: url(../../images/account-icon.svg);
+    width: 26px;
+    height: 30px;
+    background-color: #f4f4f4;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 4px;
+}
+
+.account__icon:hover {
+    opacity: .7;
+}
+
+.account__text {
+    font-family: 'Inter', 'Helvetica', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    margin: auto 17px auto 0;
+}

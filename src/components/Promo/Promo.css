@@ -10,9 +10,9 @@
     margin: 0 auto;
     max-width: 1140px;
     min-width: 320px;
-    padding: 0;
     justify-self: center;
     min-height: 580px;
+    padding: 0 70px;
 }
 
 .promo__heading {
@@ -27,7 +27,7 @@
 
 .promo__figure {
     position: absolute;
-    right: 0;
+    right: 70px;
     bottom: 60px;
     width: 722px;
     height: 244px;

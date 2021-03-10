@@ -1,0 +1,8 @@
+.login {
+    position: relative;
+    height: 100vh;
+    margin: 0 auto;
+    max-width: 396px;
+    justify-self: center;
+    background-color: #fff;
+}

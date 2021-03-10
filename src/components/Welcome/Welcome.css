@@ -1,0 +1,12 @@
+.welcome {
+    padding: 70px 0 0 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.welcome__text {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 29px;
+    margin: 40px 0;
+}

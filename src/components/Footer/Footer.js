@@ -1,5 +1,4 @@
 import './Footer.css';
-import Divider from '../Divider/Divider';
 import { footerText } from '../../configs/texts';
 import { facebookLink, githubLink, praktikumLink } from '../../configs/links';
 

@@ -1,22 +1,96 @@
 .button {
-    background-color: #3456F3;
     padding: 0;
     margin: 0;
-    color: #fff;
-    border-radius: 3px;
     border: none;
     cursor: pointer;
+    outline: 0;
 }
 
 .button:hover {
-    opacity: .7;
+    opacity: .8;
 }
 
-.button_type_logout {
+.button_type_login {
+    border-radius: 3px;
     width: 76px;
     height: 32px;
     font-size: 12px;
     line-height: 16px;
     font-weight: 400;
     margin: auto 0 auto 30px;
+    background-color: #3456f3;
+    color: #fff;
+}
+
+.button_type_search {
+    background-color: #3456f3;
+    position: absolute;
+    top: 6px;
+    right: 6px;
+    width: 34px;
+    height: 34px;
+    background-image: url(../../images/find.svg);
+    z-index: 1;
+    border-radius: 40px;
+}
+
+.button_type_select {
+    background-color: #fafafa;
+    cursor: pointer;
+    width: 36px;
+    height: 20px;
+    background-image: url(../../images/smalltumboff.svg);
+}
+
+.button_selected {
+    background-image: url(../../images/smalltumb.svg);
+}
+
+.button_type_like {
+    background-color: #fff;
+    width: 14px;
+    height: 12px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-top: 3px;
+    background-image: url(../../images/like-empty.svg);
+    cursor: pointer;
+
+}
+
+.button_filled {
+    background-image: url(../../images/like-fill.svg);
+}
+
+.button_type_bottom {
+    border-radius: 3px;
+    width: 100%;
+    height: 32px;
+    font-size: 12px;
+    line-height: 16px;
+    font-weight: 400;
+    margin: 20px auto 16px;
+    background-color: #3456f3;
+    color: #fff;
+}
+
+.button_type_profile {
+    font-size: 13px;
+    line-height: 16px;
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 16px;
+    width: auto;
+    height: auto;
+    background-color: transparent;
+}
+
+.button_type_signout {
+    color: #ee3465;
+    margin: 0;
+}
+
+.button_type_save {
+    margin: 0;
 }

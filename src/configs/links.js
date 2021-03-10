@@ -7,3 +7,5 @@ export const adaptiveSiteLink = '#';
 export const oneSiteApp = '#';
 
 export const myPhoto = '../../images/myPhoto.jpg';
+
+export const mainPageLink = '/';

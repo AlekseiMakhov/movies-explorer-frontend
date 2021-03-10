@@ -1,0 +1,17 @@
+.movies-card-list {
+    width: 100%;
+    background-color: #fafafa;
+    padding-top: 80px;
+}
+
+.movies-card-list__content {
+    display: grid;
+    gap: 37px 24px;
+    grid-template-columns: repeat(3, 1fr);
+    position: relative;
+    margin: 0 auto;
+    max-width: 1140px;
+    min-width: 320px;
+    padding: 0;
+    justify-self: center;
+}

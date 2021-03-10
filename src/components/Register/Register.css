@@ -1,0 +1,9 @@
+.register {
+    position: relative;
+    height: 100vh;
+    margin: 0 auto;
+    max-width: 396px;
+    padding: 0;
+    justify-self: center;
+    background-color: #fff;
+}

@@ -4,7 +4,6 @@
     position: relative;
     background-color: #fafafa;
     width: 100%;
-    padding-top: 110px;
 }
 
 .about-me__content {
@@ -12,7 +11,7 @@
     margin: 0 auto;
     max-width: 1140px;
     min-width: 320px;
-    padding: 0;
+    padding: 0 70px;
     justify-self: center;
 }
 
