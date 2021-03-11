@@ -6,10 +6,10 @@ import AboutMe from '../AboutMe/AboutMe';
 import Footer from '../Footer/Footer';
 import './Main.css';
 
-const Main = () => {
+const Main = ({ isMobile, openMenu }) => {
     return (
         <>
-            <Header />
+            <Header isMobile={isMobile} openMenu={openMenu} />
             <Promo />
             <AboutProject />
             <Techs />

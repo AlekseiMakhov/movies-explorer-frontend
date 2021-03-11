@@ -7,3 +7,11 @@
     justify-self: center;
     background-color: #fff;
 }
+
+@media screen and (max-width: 768px) {
+
+    .register {
+        max-width: 100%;
+        padding: 0 30px;
+    }
+}

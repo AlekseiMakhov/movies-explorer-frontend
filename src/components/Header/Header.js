@@ -7,17 +7,19 @@ import Account from '../Account/Account';
 import Logo from '../Logo/Logo';
 import { Link } from 'react-router-dom';
 
-const Header = ({ type, loggedIn }) => {
+const Header = ({ type, loggedIn, isMobile, openMenu }) => {
+
     return (
         <header className={cn('header', { 'header_type_light' : type === 'light' } )}>
             <div className='header__content'>
                 <Logo />
                 <div className='header__menu'>
-                    {loggedIn && <Navigation />}
-                    {!loggedIn && <Link className='header__link' to='/sign-up'>{regText}</Link>}
+                    {!isMobile && loggedIn && <Navigation />}
+                    {!isMobile && !loggedIn && <Link className='header__link' to='/sign-up'>{regText}</Link>}
                     {!loggedIn 
-                        ? <Button caption={buttonLoginText} type='login'/>
-                        : <Account />}
+                        ? !isMobile && <Button caption={buttonLoginText} type='login'/>
+                        : !isMobile && <Account />}
+                    {isMobile && <button type='button' className='header__burger-button' onClick={openMenu}></button>}
                 </div>
             </div>
         </header>

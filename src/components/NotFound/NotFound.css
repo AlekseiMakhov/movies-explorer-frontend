@@ -49,3 +49,17 @@
     margin: 0;
     padding: 0;
 }
+
+@media screen and (max-width: 1280px) {
+
+    .not-found-page__link {
+        bottom: 220px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    .not-found-page__link {
+        bottom: 30px;
+    }
+}

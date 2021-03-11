@@ -10,7 +10,7 @@ const AboutProject = () => {
                 <h2 className='main-title'>О проекте</h2>
                 <div className='about-project__info'>
                     <h4 className='about-project__subtitle'>{aboutProjectSub1}</h4>
-                    <h4 className='about-project__subtitle'>{aboutProjectSub2}</h4>
+                    <h4 className='about-project__subtitle about-project__subtitle_number_two'>{aboutProjectSub2}</h4>
                     <p className='about-project__text'>{aboutProjectText1}</p>
                     <p className='about-project__text'>{aboutProjectText2}</p>
                 </div>

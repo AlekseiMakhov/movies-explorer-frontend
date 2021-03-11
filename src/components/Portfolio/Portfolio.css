@@ -44,3 +44,32 @@
     background-size: contain;
     background-image: url(../../images/portfolio-arrow.svg);
 }
+
+@media screen and (max-width: 1280px) {
+
+    .portfolio {
+        padding: 90px 0;
+    }
+
+    .portfolio__link-text {
+        font-size: 28px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    .portfolio {
+        padding: 70px 0;
+    }
+
+    .portfolio__link-text {
+        font-size: 18px;
+        line-height: 28px;
+    }
+
+    .portfolio__link-arrow {
+        width: 14px;
+        height: 28px;
+    }
+}
+

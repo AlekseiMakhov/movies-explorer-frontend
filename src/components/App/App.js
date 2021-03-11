@@ -9,20 +9,31 @@ import Login from '../Login/Login';
 import Register from '../Register/Register';
 import NotFound from '../NotFound/NotFound';
 import Profile from '../Profile/Profile';
+import SideMenu from '../Side-menu/Side-menu';
+import { useMediaQuery } from 'react-responsive';
 
 function App() {
   const [loggedIn, setLoggedIn] = useState(false);
+  const isMobile = useMediaQuery({ query: '(max-width: 1280px)' });
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const closeMenu = _ => setIsMenuOpen(false);
+  const openMenu = _ => setIsMenuOpen(true);
+
   return (
     <div className="app">
+      {
+        isMenuOpen && <SideMenu closeMenu={closeMenu} />
+      }
       <Switch>
         <Route exact path='/'>
-          <Main />
+          <Main isMobile={isMobile} openMenu={openMenu} />
         </Route>
         <Route exact path='/movies'>
-          <Movies />
+          <Movies isMobile={isMobile} openMenu={openMenu} />
         </Route>  
         <Route exact path='/saved-movies'>
-          <SavedMovies />
+          <SavedMovies isMobile={isMobile} openMenu={openMenu} />
         </Route>  
         <Route exact path='/sign-in'>
           <Login />
@@ -31,13 +42,13 @@ function App() {
           <Register />
         </Route>
         <Route exact path='/profile'>
-          <Profile />
+          <Profile isMobile={isMobile} openMenu={openMenu} />
         </Route>
         <Route exact path='/not-found'>
           <NotFound />
         </Route>
         <Route path='/'>
-          {loggedIn ? <Redirect to='/movies'/> : <Redirect to='/'/>}
+          {loggedIn ? <Redirect to='/saved-movies'/> : <Redirect to='/'/>}
         </Route>
       </Switch>
     </div>

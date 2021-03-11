@@ -80,3 +80,77 @@
     background-size: cover;
     background-image: url(../../images/myPhoto.jpg);
 }
+
+@media screen and (max-width: 1280px) {
+
+    .about-me__content {
+        padding: 0 50px;
+    }
+
+    .about-me__photo {
+        width: 255px;
+        height: 307px;
+    }
+
+    .about-me__info {
+        max-width: 364px;
+    }
+
+    .about-me__name {
+        margin: 0 0 16px;
+        font-size: 40px;
+        line-height: 40px;
+    }
+    
+    .about-me__profession {
+        font-size: 12px;
+        line-height: 18px;
+        margin: 0 0 22px;
+    }
+    
+    .about-me__description {
+        font-size: 12px;
+        line-height: 18px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    .about-me__content {
+        padding: 0 18px;
+    }
+
+    .about-me__photo {
+        width: 100%;
+        height: calc(120.5vw - 36px);
+    }
+
+    .about-me__info {
+        max-width: 100%;
+        margin-top: 40px;
+    }
+
+    .about-me__name {
+        margin: 0 0 20px;
+        font-size: 40px;
+        line-height: 40px;
+    }
+    
+    .about-me__profession {
+        font-size: 11px;
+        line-height: 16px;
+        margin: 0 0 20px;
+    }
+    
+    .about-me__description {
+        font-size: 11px;
+        line-height: 16px;
+        margin: 0 0 40px;
+    }
+
+    .about-me__container {
+        margin-top: 60px;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+}

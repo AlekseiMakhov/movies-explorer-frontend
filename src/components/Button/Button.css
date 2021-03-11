@@ -94,3 +94,13 @@
 .button_type_save {
     margin: 0;
 }
+
+@media screen and (max-width: 1280px) {
+
+    .button_type_login {
+        width: 54px;
+        height: 26px;
+        font-size: 10px;
+        margin: auto 0 auto 14px;
+    }
+}

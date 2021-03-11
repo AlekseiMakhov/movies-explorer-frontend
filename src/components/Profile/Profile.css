@@ -3,6 +3,7 @@
     height: calc(100vh - 74px);
     margin: 0 auto;
     max-width: 410px;
+    min-width: 320px;
     justify-self: center;
     background-color: #fff;
 }
@@ -59,4 +60,42 @@
     font-weight: 500;
     text-align: center;
     margin: 0;
+}
+
+@media screen and (max-width: 1280px) {
+
+    .profile__buttons {
+        bottom: 270px;
+    }
+
+    .profile__welcome-text {
+        margin: 235px auto 95px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    .profile__buttons {
+        bottom: 40px;
+    }
+
+    .profile__welcome-text {
+        margin: 70px auto 80px;
+    }
+
+    .profile__input-container {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        padding: 0 0 16px 0;
+        border-bottom: solid 1px #e8e8e8;
+        margin-top: 17px;
+        border: none;
+        padding: 0;
+    }
+
+    .profile {
+        max-width: 100%;
+        padding: 0 30px;
+    }
 }

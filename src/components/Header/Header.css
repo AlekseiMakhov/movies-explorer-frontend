@@ -44,3 +44,36 @@
 .header__link:hover {
     opacity: .7;
 }
+
+.header__burger-button {
+    background-image: url(../../images/menu.svg);
+    width: 30px;
+    height: 30px;
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    background-color: transparent;
+}
+
+.header__burger-button:hover {
+    opacity: .7;
+}
+
+@media screen and (max-width: 1280px) {
+    .header__content {
+        padding: 0 30px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .header__content {
+        padding: 0 14px;
+    }
+
+    .header__link {
+        font-size: 10px;
+        line-height: 16px;
+    }
+}
