@@ -14,8 +14,8 @@ const AboutMe = () => {
                         <p className='about-me__profession'>{aboutMeProfession}</p>
                         <p className='about-me__description'>{aboutMeDescription}</p>
                         <div className='about-me__links'>
-                            <a className='about-me__link' src={facebookLink}>Facebook</a>
-                            <a className='about-me__link' src={githubLink}>Github</a>
+                            <a className='about-me__link' href={facebookLink} target='blank'>Facebook</a>
+                            <a className='about-me__link' href={githubLink} target='blank'>Github</a>
                         </div>
                     </div>
                     <div className='about-me__photo'></div>

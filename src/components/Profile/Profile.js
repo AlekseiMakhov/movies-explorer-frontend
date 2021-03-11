@@ -12,7 +12,7 @@ const Profile = ({ signout, isMobile, openMenu }) => {
     const editProfile = _ => setIsEditActive(true)
     return (
         <>
-            <Header type='light' loggedIn={true} isMobile={isMobile} openMenu={openMenu} />
+            <Header type='white' loggedIn={true} isMobile={isMobile} openMenu={openMenu} />
             <section className='profile'>
                 <div className='profile__content'>
                     <h3 className='profile__welcome-text'>Привет, {userName}!</h3>

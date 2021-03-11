@@ -9,17 +9,11 @@ const Footer = () => {
                 <p className='footer__text footer__text_type_project'>{footerText}</p>
                 <div className='footer__container'>
                     <p className='footer__text'>©2021</p>
-                    <ul className='footer__links'>
-                        <li className='footer__link'>
-                            <a src={praktikumLink}>Яндекс.Практикум</a>
-                        </li>
-                        <li className='footer__link'>
-                            <a src={githubLink}>Github</a>
-                        </li>
-                        <li className='footer__link'>
-                            <a src={facebookLink}>Facebook</a>
-                        </li>
-                    </ul>
+                    <div className='footer__links'>
+                        <a className='footer__link' target='blank' href={praktikumLink}>Яндекс.Практикум</a>
+                        <a className='footer__link' target='blank' href={githubLink}>Github</a>
+                        <a className='footer__link' target='blank' href={facebookLink}>Facebook</a>
+                    </div>
                 </div>
             </div>
         </footer>

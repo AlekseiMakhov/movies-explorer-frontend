@@ -10,6 +10,10 @@
     background-color: #fafafa;
 }
 
+.header_type_white {
+    background-color: #fff;
+}
+
 .header__content {
     position: relative;
     height: 100%;

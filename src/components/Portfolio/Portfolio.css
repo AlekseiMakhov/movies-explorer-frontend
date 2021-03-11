@@ -28,8 +28,9 @@
     line-height: 50px;
     padding-bottom: 19px;
     font-weight: 400;
-    text-decoration: none;
     cursor: pointer;
+    text-decoration: none;
+    color: #000;
 }
 
 .portfolio__link-text:hover {

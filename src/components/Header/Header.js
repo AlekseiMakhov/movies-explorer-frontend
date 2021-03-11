@@ -10,7 +10,10 @@ import { Link } from 'react-router-dom';
 const Header = ({ type, loggedIn, isMobile, openMenu }) => {
 
     return (
-        <header className={cn('header', { 'header_type_light' : type === 'light' } )}>
+        <header className={cn('header', 
+            { 'header_type_light' : type === 'light' },
+            { 'header_type_white' : type === 'white' } 
+            )}>
             <div className='header__content'>
                 <Logo />
                 <div className='header__menu'>

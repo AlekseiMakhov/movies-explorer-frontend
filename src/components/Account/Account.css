@@ -31,7 +31,6 @@
 
     .account {
         margin: 0 0 92px;
-        justify-self: end;
     }
 }
 
@@ -39,6 +38,5 @@
 
     .account {
         margin: 0 0 46px;
-        justify-self: flex-end;
     }
 }

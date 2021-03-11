@@ -83,7 +83,7 @@
         margin: 70px auto 80px;
     }
 
-    .profile__input-container {
+    /* .profile__input-container {
         display: flex;
         width: 100%;
         justify-content: space-between;
@@ -92,10 +92,10 @@
         margin-top: 17px;
         border: none;
         padding: 0;
-    }
+    } */
 
-    .profile {
+    /* .profile {
         max-width: 100%;
-        padding: 0 30px;
-    }
+       
+    } */
 }
