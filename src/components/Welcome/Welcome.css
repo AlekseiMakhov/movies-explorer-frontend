@@ -1,0 +1,31 @@
+.welcome {
+    padding: 70px 0 0 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.welcome__text {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 29px;
+    margin: 40px 0;
+}
+
+@media screen and (max-width: 1280px) {
+
+    .welcome {
+        padding-top: 230px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    .welcome {
+        padding-top: 55px;
+        align-items: center;
+    }
+
+    .welcome__text {
+        margin: 40px 0 80px;
+    }
+}

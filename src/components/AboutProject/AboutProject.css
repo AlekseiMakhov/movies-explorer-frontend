@@ -1,0 +1,128 @@
+.about-project {
+    position: relative;
+    width: 100%;
+    background-color: #fafafa;
+    padding-bottom: 110px;
+}
+
+.about-project__content {
+    position: relative;
+    margin: 0 auto;
+    max-width: 1140px;
+    min-width: 320px;
+    padding: 0 70px;
+    justify-self: center;
+}
+
+.about-project__info {
+    margin-top: 70px;
+    display: grid;
+    gap: 26px 40px;
+    width: 100%;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.about-project__timeline {
+    margin: 110px 0 0;
+    position: relative;
+    display: grid;
+    grid-template-columns: 20% 80%;
+    grid-template-rows: repeat(2,36px);
+    text-align: center;
+}
+
+.about-project__subtitle {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    margin: 0;
+}
+
+.about-project__subtitle_number_two {
+    grid-row: 1;
+}
+
+.about-project__text {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    margin: 0;
+    align-self: center;
+}
+
+.about-project__text_type_timeline {
+    line-height: 36px;
+    text-align: center;
+    grid-row: 1;
+}
+
+.about-project__text_type_week-1 {
+    background-color: #3456f3;
+    color: #fff;
+    grid-column: 1;
+    grid-row: 1;
+    line-height: 36px;
+}
+
+.about-project__text_type_week-4 {
+    background-color: #f2f2f2;
+    grid-column: 2;
+    grid-row: 1;
+    line-height: 36px;
+}
+
+.about-project__text_type_bottom {
+    color: #a0a0a0;
+    grid-row: 2;
+    line-height: 36px;
+}
+
+@media screen and (max-width: 1280px) {
+    .about-project__content {
+        padding: 0 50px;
+    }
+
+    .about-project__text {
+        font-size: 12px;
+    }
+
+    .about-project__timeline {
+        margin: 95px 0 0;
+    }
+
+    .about-project__info {
+        gap: 22px 30px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .about-project__content {
+        padding: 0 18px;
+    }
+
+    .about-project__text {
+        font-size: 11px;
+        line-height: 35px;
+    }
+
+    .about-project__timeline {
+        margin: 60px 0 0;
+    }
+
+    .about-project__info {
+        margin-top: 60px;
+        row-gap: 16px;
+        width: 100%;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .about-project__subtitle {
+        font-size: 18px;
+        line-height: 22px;
+    }
+
+    .about-project__subtitle_number_two {
+        grid-row: 3;
+        margin-top: 40px;
+    }
+}

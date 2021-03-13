@@ -1,0 +1,17 @@
+.login {
+    position: relative;
+    height: 100vh;
+    margin: 0 auto;
+    max-width: 396px;
+    justify-self: center;
+    background-color: #fff;
+    align-items: center;
+}
+
+@media screen and (max-width: 768px) {
+
+    .login {
+        max-width: 100%;
+        padding: 0 30px;
+    }
+}
