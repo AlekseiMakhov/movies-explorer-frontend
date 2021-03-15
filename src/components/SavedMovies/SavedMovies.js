@@ -4,10 +4,10 @@ import MoviesCardList from '../MoviesCardList/MoviesCardList';
 import './SavedMovies.css';
 import Footer from '../Footer/Footer';
 
-const SavedMovies = ({ isMobile, openMenu }) => {
+const SavedMovies = ({ isMobile, isTablet, openMenu }) => {
     return (
         <div className='movies'>
-            <Header type='light' loggedIn={true} isMobile={isMobile} openMenu={openMenu} />
+            <Header type='light' loggedIn={true} isMobile={isMobile} isTablet={isTablet} openMenu={openMenu} />
             <SearchForm />
             <MoviesCardList />
             <Footer />

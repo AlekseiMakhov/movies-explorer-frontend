@@ -4,7 +4,7 @@ import Header from '../Header/Header';
 import Input from '../Input/Input';
 import './Profile.css';
 
-const Profile = ({ signout, isMobile, openMenu }) => {
+const Profile = ({ signout, isMobile, isTablet, openMenu }) => {
     const userName = 'Алексей';
     const email = 'aleks@gmail.com';
     const [isEditActive, setIsEditActive] = useState(false);
@@ -12,7 +12,7 @@ const Profile = ({ signout, isMobile, openMenu }) => {
     const editProfile = _ => setIsEditActive(true)
     return (
         <>
-            <Header type='white' loggedIn={true} isMobile={isMobile} openMenu={openMenu} />
+            <Header type='white' loggedIn={true} isMobile={isMobile} isTablet={isTablet} openMenu={openMenu} />
             <section className='profile'>
                 <div className='profile__content'>
                     <h3 className='profile__welcome-text'>Привет, {userName}!</h3>

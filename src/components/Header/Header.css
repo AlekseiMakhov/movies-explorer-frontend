@@ -65,13 +65,13 @@
     opacity: .7;
 }
 
-@media screen and (max-width: 1280px) {
+@media screen and (max-width: 920px) {
     .header__content {
         padding: 0 30px;
     }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 620px) {
     .header__content {
         padding: 0 14px;
     }

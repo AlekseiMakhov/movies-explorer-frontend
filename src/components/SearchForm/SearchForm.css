@@ -8,6 +8,7 @@
     padding: 60px 0 70px 0;
     position: relative;
     margin: 0 auto;
+    width: calc(100% - 140px);
     max-width: 1140px;
     min-width: 320px;
     justify-self: center;
@@ -36,6 +37,10 @@
     outline: 0;
 }
 
+.search-form__input:focus {
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+} 
+
 .search-form__select-container {
     margin: 40px auto 0 auto;
     display: flex;
@@ -49,19 +54,29 @@
     margin: auto 0 auto 12px;
 }
 
-@media screen and (max-width: 1280px) {
+@media screen and (max-width: 920px) {
 
     .search-form {
         padding: 0 30px;
         width: calc(100% - 60px);
     }
+
+    .search-form__content {
+        margin: 0 auto;
+        width: 100%
+    }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 620px) {
 
     .movies-card-list__content {
-        padding: 0 30px;
+        padding: 0 10px;
         gap: 14px;
         grid-template-columns: 100%;
+    }
+
+    .search-form {
+        padding: 0 10px;
+        width: calc(100% - 20px);
     }
 }

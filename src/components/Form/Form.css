@@ -51,7 +51,7 @@
     flex-direction: column;
 }
 
-@media screen and (max-width: 1280px) {
+@media screen and (max-width: 920px) {
 
     .form {
         height: calc(100vh - 380px);
@@ -62,7 +62,7 @@
     }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 620px) {
 
     .not-found-page__link {
         bottom: 30px;

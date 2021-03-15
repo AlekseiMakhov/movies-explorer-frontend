@@ -50,14 +50,14 @@
     padding: 0;
 }
 
-@media screen and (max-width: 1280px) {
+@media screen and (max-width: 920px) {
 
     .not-found-page__link {
         bottom: 220px;
     }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 620px) {
 
     .not-found-page__link {
         bottom: 30px;

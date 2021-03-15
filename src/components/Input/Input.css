@@ -9,7 +9,11 @@
     line-height: 16px;
     padding: 0 0 0 15px;
     border: none;
-    outline-color: #bbb;
+    outline: 0;
+}
+
+.input:focus {
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.15);
 }
 
 .input__text {
@@ -30,5 +34,12 @@
     background-color: transparent;
     text-align: right;
     outline: none;
+    width: auto;
+    margin: 0 0 0 auto;
     height: auto;
+    border-radius: 5px;
+}
+
+.input_type_profile:focus {
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.15);
 }

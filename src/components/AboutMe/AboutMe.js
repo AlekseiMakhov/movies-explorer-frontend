@@ -1,4 +1,4 @@
-import { facebookLink, githubLink, myPhoto } from '../../configs/links';
+import { facebookLink, githubLink } from '../../configs/links';
 import { aboutMeName, aboutMeProfession, aboutMeDescription } from '../../configs/texts';
 import Portfolio from '../Portfolio/Portfolio';
 import './AboutMe.css';

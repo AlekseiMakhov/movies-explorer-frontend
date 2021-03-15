@@ -8,4 +8,10 @@ export const oneSiteApp = 'https://alekseimakhov.github.io/turbinA/';
 
 export const myPhoto = '../../images/myPhoto.jpg';
 
-export const mainPageLink = '/';
+export const promoPage = '/';
+export const signinPage = '/sign-in';
+export const signupPage = '/sign-up';
+export const profilePage = '/profile';
+export const moviesPage = '/movies';
+export const savedMoviesPage = '/saved-movies';
+export const notFoundPage = '/not-found';

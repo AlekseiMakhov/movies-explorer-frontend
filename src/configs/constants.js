@@ -143,3 +143,6 @@ export const movies = [
         owner: '123123123123123123123'
     }
 ]
+
+export const BASE_URL = '#';
+export const MOVIES_BASE_URL = 'https://api.nomoreparties.co';

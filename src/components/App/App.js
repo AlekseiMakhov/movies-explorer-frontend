@@ -11,10 +11,14 @@ import NotFound from '../NotFound/NotFound';
 import Profile from '../Profile/Profile';
 import SideMenu from '../Side-menu/Side-menu';
 import { useMediaQuery } from 'react-responsive';
+import { 
+  moviesPage, profilePage, promoPage, savedMoviesPage, signinPage, signupPage, notFoundPage 
+} from '../../configs/links';
 
 function App() {
   const [loggedIn, setLoggedIn] = useState(false);
-  const isMobile = useMediaQuery({ query: '(max-width: 1280px)' });
+  const isTablet = useMediaQuery({ query: '(max-width: 920px)' });
+  const isMobile = useMediaQuery({ query: '(max-width: 620px)' });
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const closeMenu = _ => setIsMenuOpen(false);
@@ -26,29 +30,33 @@ function App() {
         isMenuOpen && <SideMenu closeMenu={closeMenu} />
       }
       <Switch>
-        <Route exact path='/'>
-          <Main isMobile={isMobile} openMenu={openMenu} />
+        <Route exact path={promoPage}>
+          <Main isMobile={isMobile} isTablet={isTablet} openMenu={openMenu} />
         </Route>
-        <Route exact path='/movies'>
-          <Movies isMobile={isMobile} openMenu={openMenu} />
+        <Route exact path={moviesPage}>
+          <Movies isMobile={isMobile} isTablet={isTablet} openMenu={openMenu} />
         </Route>  
-        <Route exact path='/saved-movies'>
-          <SavedMovies isMobile={isMobile} openMenu={openMenu} />
+        <Route exact path={savedMoviesPage}>
+          <SavedMovies isMobile={isMobile} isTablet={isTablet} openMenu={openMenu} />
         </Route>  
-        <Route exact path='/sign-in'>
+        <Route exact path={signinPage}>
           <Login />
         </Route>
-        <Route exact path='/sign-up'>
+        <Route exact path={signupPage}>
           <Register />
         </Route>
-        <Route exact path='/profile'>
-          <Profile isMobile={isMobile} openMenu={openMenu} />
+        <Route exact path={profilePage}>
+          <Profile isMobile={isMobile} isTablet={isTablet} openMenu={openMenu} />
         </Route>
-        <Route exact path='/not-found'>
+        <Route exact path={notFoundPage}>
           <NotFound />
         </Route>
         <Route path='/'>
-          {loggedIn ? <Redirect to='/saved-movies'/> : <Redirect to='/'/>}
+          {
+            loggedIn 
+              ? <Redirect to={moviesPage} /> 
+              : <Redirect to={promoPage} />
+          }
         </Route>
       </Switch>
     </div>

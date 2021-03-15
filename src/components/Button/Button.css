@@ -13,13 +13,15 @@
 .button_type_login {
     border-radius: 3px;
     width: 76px;
-    height: 32px;
     font-size: 12px;
-    line-height: 16px;
+    line-height: 32px;
     font-weight: 400;
     margin: auto 0 auto 30px;
     background-color: #3456f3;
     color: #fff;
+    text-decoration: none;
+    text-align: center;
+    justify-items: center;
 }
 
 .button_type_search {
@@ -56,7 +58,6 @@
     margin-top: 3px;
     background-image: url(../../images/like-empty.svg);
     cursor: pointer;
-
 }
 
 .button_filled {
@@ -86,6 +87,18 @@
     background-color: transparent;
 }
 
+.button_type_more {
+    font-size: 12px;
+    line-height: 36px;
+    font-weight: 500;
+    width: 240px;
+    text-align: center;
+    margin: 50px auto 0;
+    background-color: transparent;
+    border-radius: 5px;
+    border: solid 1px #E8E8E8;
+}
+
 .button_type_signout {
     color: #ee3465;
     margin: 0;
@@ -95,7 +108,7 @@
     margin: 0;
 }
 
-@media screen and (max-width: 1280px) {
+@media screen and (max-width: 920px) {
 
     .button_type_login {
         width: 54px;

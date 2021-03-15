@@ -8,7 +8,7 @@
     align-items: center;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 620px) {
 
     .login {
         max-width: 100%;

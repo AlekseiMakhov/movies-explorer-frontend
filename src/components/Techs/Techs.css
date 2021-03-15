@@ -63,7 +63,7 @@
     margin-right: 0;
 }
 
-@media screen and (max-width: 1280px) {
+@media screen and (max-width: 920px) {
 
     .techs {
         padding-bottom: 90px;
@@ -76,6 +76,7 @@
     .techs__list-element {
         width: 84px;
         height: 37px;
+        margin-bottom: 10px;
     }
 
     .techs__title {
@@ -93,7 +94,7 @@
     }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 620px) {
 
     .techs {
         padding: 60px 0 70px;
