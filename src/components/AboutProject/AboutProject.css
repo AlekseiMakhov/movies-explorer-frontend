@@ -7,10 +7,10 @@
 
 .about-project__content {
     position: relative;
-    margin: 0 auto;
     max-width: 1140px;
-    min-width: 320px;
+    min-width: 284px;
     padding: 0 70px;
+    margin: 0 auto;
     justify-self: center;
 }
 
@@ -79,7 +79,8 @@
 
 @media screen and (max-width: 920px) {
     .about-project__content {
-        padding: 0 50px;
+        margin: 0 50px;
+        padding: 0;
     }
 
     .about-project__text {
@@ -97,7 +98,7 @@
 
 @media screen and (max-width: 620px) {
     .about-project__content {
-        padding: 0 18px;
+        margin: 0 18px;
     }
 
     .about-project__text {

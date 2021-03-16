@@ -9,7 +9,7 @@
     position: relative;
     margin: 0 auto;
     max-width: 1140px;
-    min-width: 320px;
+    min-width: 284px;
     padding: 0 70px;
     justify-self: center;
     align-items: center;
@@ -70,7 +70,8 @@
     }
 
     .techs__content {
-        padding: 0 50px;
+        margin: 0 50px;
+        padding: 0;
     }
 
     .techs__list-element {
@@ -101,7 +102,7 @@
     }
 
     .techs__content {
-        padding: 0 18px;
+        margin: 0 18px;
     }
 
     .techs__title {

@@ -15,7 +15,8 @@
     position: relative;
     margin: 0 auto;
     width: calc(100% - 140px);
-    min-width: 320px;
+    min-width: 292px;
+    max-width: 1140px;
     padding: 0 70px;
     justify-self: center;
 }
@@ -40,13 +41,15 @@
 @media screen and (max-width: 920px) {
 
     .movies-card-list__content {
-        padding: 0 30px;
+        margin: 0 30px;
+        padding: 0;
         gap: 30px;
         grid-template-columns: repeat(2, 1fr);
     }
 
     .movies-card-list__not-found {
-        padding: 0 30px;
+        margin: 0 30px;
+        padding: 0;
     }
 }
 
@@ -57,12 +60,14 @@
     }
 
     .movies-card-list__content {
-        padding: 0 14px;
+        max-width: 300px;
+        margin: 0 14px;
+        margin: 0 auto;
         gap: 14px;
         grid-template-columns: 100%;
     }
 
     .movies-card-list__not-found {
-        padding: 0 14px;
+        margin: 0 14px;
     }
 }

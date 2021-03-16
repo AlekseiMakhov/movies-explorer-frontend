@@ -10,7 +10,7 @@
     position: relative;
     margin: 0 auto;
     max-width: 1140px;
-    min-width: 320px;
+    min-width: 292px;
     padding: 0 70px;
     justify-self: center;
 }
@@ -66,14 +66,15 @@
 @media screen and (max-width: 920px) {
 
     .footer__content {
-        padding: 0 30px;
+        margin: 0 30px;
+        padding: 0;
     }
 }
 
 @media screen and (max-width: 620px) {
 
     .footer__content {
-        padding: 0 14px;
+        margin: 0 14px;
     }
 
     .footer__container {

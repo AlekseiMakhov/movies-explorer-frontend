@@ -2,18 +2,7 @@ import { useState } from 'react';
 import Button from '../Button/Button';
 import './SearchForm.css';
 
-const SearchForm = ({ onSearchClick, movies }) => {
-
-    const [isActive, setIsActive] = useState(false);
-    // const shortMovies = JSON.parse(localStorage.getItem('movies'))||[];
-
-    const filterShortMovies = _ => {
-        setIsActive(!isActive);
-        console.log(movies);
-        isActive 
-            ?   localStorage.setItem('movies', JSON.stringify(movies.filter(e => e.duration<=40)))
-            :   localStorage.setItem('movies', JSON.stringify((movies)))
-    }
+const SearchForm = ({ onSearchClick, filterShortMovies, isActive }) => {
 
     return (
         <section className='search-form'>
