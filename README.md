@@ -18,3 +18,6 @@
 * Git
 * Webpack
 * npm
+
+Ссылки: _http://chosen-one.students.nomoredomains.rocks_, 
+        _https://chosen-one.students.nomoredomains.rocks_
