@@ -57,11 +57,22 @@
     background-repeat: no-repeat;
     margin-top: 3px;
     background-image: url(../../images/like-empty.svg);
-    cursor: pointer;
 }
 
 .button_filled {
     background-image: url(../../images/like-fill.svg);
+}
+
+.button_type_delete {
+    display: none;
+    background-image: url(../../images/delete.svg);
+    width: 10px;
+    height: 10px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-top: 4px;
+    background-color: transparent;
 }
 
 .button_type_bottom {
@@ -74,6 +85,16 @@
     margin: 20px auto 16px;
     background-color: #3456f3;
     color: #fff;
+}
+
+.button_disabled {
+    cursor: default;
+    color: #000;
+    background-color: #f8f8f8;
+}
+
+.button_disabled:hover {
+    opacity: 1;
 }
 
 .button_type_profile {
@@ -112,7 +133,7 @@
 
     .button_type_login {
         width: 54px;
-        height: 26px;
+        line-height: 26px;
         font-size: 10px;
         margin: auto 0 auto 14px;
     }

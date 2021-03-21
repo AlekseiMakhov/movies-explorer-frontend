@@ -25,9 +25,18 @@
     display: flex;
     flex-direction: column;
     position: absolute;
-    width: 200px;
-    left: calc(50% - 100px);
+    width: 300px;
+    left: calc(50% - 150px);
     bottom: 70px;
+}
+
+.profile__error-text {
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 13px;
+    color: #ee3465;
+    text-align: center;
+    margin: 0 0 20px;
 }
 
 .profile__welcome-text {

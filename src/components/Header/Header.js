@@ -6,6 +6,7 @@ import Navigation from '../Navigation/Navigation';
 import Account from '../Account/Account';
 import Logo from '../Logo/Logo';
 import { Link } from 'react-router-dom';
+import { signupPage } from '../../configs/links';
 
 const Header = ({ 
     type, loggedIn, isTablet, openMenu 
@@ -19,13 +20,18 @@ const Header = ({
             <div className='header__content'>
                 <Logo />
                 <div className='header__menu'>
-                    {!isTablet && loggedIn && <Navigation />}
-                    {!isTablet && !loggedIn && <Link className='header__link' to='/sign-up'>{regText}</Link>}
-                    {!loggedIn 
-                        ? !isTablet && <Button caption={loginText} type='login' />
-                        : !isTablet && <Account />
+                    {
+                        !isTablet && loggedIn && <Navigation />
                     }
-                    {isTablet && <button type='button' className='header__burger-button' onClick={openMenu}></button>}
+                    {
+                        !loggedIn && <Link className='header__link' to={signupPage}>{regText}</Link>
+                    }
+                    {
+                        !loggedIn 
+                            ? <Button caption={loginText} type='login' />
+                            : !isTablet && <Account />
+                    }
+                    {isTablet && loggedIn && <button type='button' className='header__burger-button' onClick={openMenu}></button>}
                 </div>
             </div>
         </header>

@@ -2,7 +2,7 @@ import {
     conflictError, loginError, serverError, tokenNotCorrect, tokenNotRecieved 
 } from '../configs/errors';
 
-import BASE_URL from '../constants/constants';
+import { BASE_URL } from '../configs/constants';
 
 export const authorize = (email, password) => {
     return fetch(`${BASE_URL}/signin`, {
@@ -23,14 +23,14 @@ export const authorize = (email, password) => {
     })
 }
 
-export const register = (email, password) => {
+export const register = (email, password, name) => {
     return fetch(`${BASE_URL}/signup`, {
         method: 'POST',
         headers: {
             'Accept': 'application/json',
             'Content-Type': 'application/json'
         },
-        body: JSON.stringify({ email, password })
+        body: JSON.stringify({email, password, name})
     })
     .then(response => {
         if (response.status === 400) throw new Error(loginError)
@@ -40,6 +40,7 @@ export const register = (email, password) => {
     })
     .then(res => res)
 }
+
 export const tokenCheck = (token) => {
     return fetch(`${BASE_URL}/users/me`, {
         method: 'GET',

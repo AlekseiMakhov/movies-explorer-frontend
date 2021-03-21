@@ -6,10 +6,21 @@ import AboutMe from '../AboutMe/AboutMe';
 import Footer from '../Footer/Footer';
 import './Main.css';
 
-const Main = ({ isMobile, isTablet, openMenu }) => {
+const Main = ({ 
+    isMobile, 
+    isTablet, 
+    openMenu, 
+    loggedIn 
+}) => {
+
     return (
         <>
-            <Header isMobile={isMobile} isTablet={isTablet} openMenu={openMenu} />
+            <Header 
+                isMobile={isMobile} 
+                isTablet={isTablet} 
+                openMenu={openMenu} 
+                loggedIn={loggedIn} 
+            />
             <Promo />
             <AboutProject />
             <Techs />

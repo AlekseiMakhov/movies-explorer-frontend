@@ -4,12 +4,12 @@ import { profilePage } from '../../configs/links';
 import CurrentUser from '../../contexts/CurrentUser';
 import './Account.css';
 
-const Account = () => {
+const Account = ({ onClick }) => {
     const user = useContext(CurrentUser);
     return (
         <div className='account'>
-            <p className='account__text'>{user?.name||'Алексей'}</p>
-            <Link className='account__icon' to={profilePage}></Link>
+            <p className='account__text'>{user?.name||'Имя'}</p>
+            <Link className='account__icon' to={profilePage} onClick={onClick} ></Link>
         </div>
     )
 }

@@ -18,4 +18,3 @@
 * Git
 * Webpack
 * npm
-* библиотека classNames

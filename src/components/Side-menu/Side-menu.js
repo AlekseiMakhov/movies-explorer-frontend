@@ -1,5 +1,5 @@
-import { Link } from 'react-router-dom';
 import Account from '../Account/Account';
+import Navigation from '../Navigation/Navigation';
 
 import './Side-menu.css';
 
@@ -10,11 +10,9 @@ const SideMenu = ({ closeMenu }) => {
                 <button className='side-menu__close' onClick={closeMenu}></button>
                 
                 <div className='side-menu__links'>
-                    <Link className='side-menu__link' to='/'>Главная</Link>
-                    <Link className='side-menu__link side-menu__link_active' to='/movies'>Фильмы</Link>
-                    <Link className='side-menu__link' to='/saved-movies'>Сохраненные фильмы</Link>
+                    <Navigation isSideMenu={true}  closeMenu={closeMenu}/>
                 </div>
-                <Account />
+                <Account onClick={closeMenu} />
             </div>
         </div>
         

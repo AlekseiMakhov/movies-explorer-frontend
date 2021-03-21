@@ -24,11 +24,11 @@ class Api {
     }
 }
 
-const api = new Api({
+const moviesApi = new Api({
     baseUrl: MOVIES_BASE_URL,
     headers: {
         'Content-Type': 'application/json',
     },
 });
 
-export default api;
+export default moviesApi;

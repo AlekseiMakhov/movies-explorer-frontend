@@ -1,4 +1,4 @@
-import BASE_URL from '../constants/constants';
+import { BASE_URL, MOVIES_BASE_URL } from '../configs/constants';
 
 class Api {
     constructor(options) {
@@ -17,13 +17,13 @@ class Api {
     }
 
     // редактирование профиля
-    editProfileInfo(user, token) {
+    editProfileInfo(name, email, token) {
         return this._sendRequest(`${this._baseUrl}/users/me`, {
             method: 'PATCH',
             headers: {authorization: `Bearer ${token}`, ...this._headers},
             body: JSON.stringify({
-                name: user.name,
-                email: user.email
+                name,
+                email,
             }),
         });
     }
@@ -35,18 +35,28 @@ class Api {
         });
     }
 
-    // отправка данных о новой карточке
-    createNewCard(movie, token) {
+    // добавление фильма
+    addMovie(movie, token) {
         return this._sendRequest(`${this._baseUrl}/movies`, {
             method: 'POST',
             headers: {authorization: `Bearer ${token}`,...this._headers},
             body: JSON.stringify({
-                movie: movie
+                movieId: movie.id || 0,
+                nameRU: movie.nameRU || 'no russian name',
+                nameEN: movie.nameEN || 'no english name',
+                director: movie.director || 'without director',
+                description: movie.description || 'witout description',
+                trailer: movie.trailerLink || 'https://youtu.be/yGgbNCkJqSM',
+                country: movie.country || 'the whole world',
+                duration: movie.duration || 0,
+                year: +movie.year || 0,
+                image: MOVIES_BASE_URL+movie.image.url || 'https://tir-izmailovo.ru/wp-content/uploads/2016/10/404_error.jpg',
+                thumbnail: MOVIES_BASE_URL+movie.image.formats.thumbnail.url || 'https://tir-izmailovo.ru/wp-content/uploads/2016/10/404_error.jpg',
             }),
         });
     }
 
-    // удаление карточки
+    // удаление фильма из базы
     deleteMovie(movieId, token) {
         return this._sendRequest(`${this._baseUrl}/movies/${movieId}`, {
             method: 'DELETE',

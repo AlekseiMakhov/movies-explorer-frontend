@@ -8,6 +8,17 @@
     background-color: #fff;
     box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.08);
     overflow: hidden;
+    text-decoration: none;
+    color: #000;
+    cursor: pointer;
+}
+
+.movies-card:hover .button_type_delete {
+    display: block;
+}
+
+.movies-card:hover {
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
 }
 
 .movies-card__picture {

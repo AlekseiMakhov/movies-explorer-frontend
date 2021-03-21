@@ -1,6 +1,11 @@
 import './Footer.css';
-import { copyright, footerText, praktikum, github, facebook } from '../../configs/texts';
-import { facebookLink, githubLink, praktikumLink } from '../../configs/links';
+import { 
+    copyright, footerText, praktikum, github, facebook 
+} from '../../configs/texts';
+
+import { 
+    facebookLink, githubLink, praktikumLink 
+} from '../../configs/links';
 
 const Footer = () => {
     return (

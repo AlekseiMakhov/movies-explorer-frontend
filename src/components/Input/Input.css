@@ -25,6 +25,10 @@
     margin: 10px 0;
 }
 
+.input_invalid {
+    color: #ee3465;
+}
+
 .input__text_type_error {
     color: #ee3465;
     margin: 10px 0 0 0;
@@ -38,6 +42,7 @@
     margin: 0 0 0 auto;
     height: auto;
     border-radius: 5px;
+    width: calc(100% - 70px);
 }
 
 .input_type_profile:focus {
