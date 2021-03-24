@@ -3,7 +3,6 @@ import SearchForm from '../SearchForm/SearchForm';
 import MoviesCardList from '../MoviesCardList/MoviesCardList';
 import './Movies.css';
 import Footer from '../Footer/Footer';
-import { useEffect } from 'react';
 
 const Movies = ({ 
     isMobile, 
@@ -14,15 +13,12 @@ const Movies = ({
     isError, 
     isLoading, 
     onCardButtonClick, 
-    savedMovies, 
-    loggedIn, 
-    isActive, 
+    loggedIn,
+    isActive,
+    isFormBlocked, 
+    savedMovies,
     filterShortMovies
 }) => {
-
-    useEffect(()=>{
-        localStorage.removeItem('movies');
-    },[]);
 
     return (
         <div className='movies'>
@@ -36,17 +32,17 @@ const Movies = ({
             <SearchForm 
                 onSearchClick={onSearchClick} 
                 filterShortMovies={filterShortMovies} 
-                isActive={isActive} 
+                isActive={isActive}
+                isFormBlocked={isFormBlocked}
             />
             <MoviesCardList 
                 isMobile={isMobile} 
                 isTablet={isTablet} 
                 isLoading={isLoading}
+                savedMovies={savedMovies}
                 isError={isError} 
                 isNotFound={isNotFound} 
-                savedMovies={savedMovies}
                 onCardButtonClick={onCardButtonClick}
-                movies={JSON.parse(localStorage.getItem('movies')) || []}
                 isMoviesPage={true}
             />
             <Footer />

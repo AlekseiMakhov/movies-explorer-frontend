@@ -12,7 +12,7 @@ const Form = ({
     buttonText, 
     onSubmit, 
     destination,
-    disabled
+    disabled,
 }) => {
 
     return (

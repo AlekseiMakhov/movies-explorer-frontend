@@ -34,6 +34,16 @@
     margin: 10px 0 0 0;
 }
 
+.input__text_type_profile_error {
+    margin: 0 0 0 auto;
+    width: calc(100% - 50px);
+    text-align: end;
+}
+
+.input__text_type_profile_error:last-of-type {
+    margin-top: 15px;
+}
+
 .input_type_profile {
     background-color: transparent;
     text-align: right;

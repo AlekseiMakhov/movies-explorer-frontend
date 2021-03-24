@@ -14,9 +14,9 @@ const SavedMovies = ({
     isLoading, 
     onCardButtonClick, 
     loggedIn, 
-    savedMovies, 
-    isActive, 
-    filterShortMovies
+    isActive,
+    isFormBlocked,
+    filterShortMovies,
 }) => {
     
     return (
@@ -31,7 +31,8 @@ const SavedMovies = ({
             <SearchForm 
                 onSearchClick={onSearchClick} 
                 filterShortMovies={filterShortMovies} 
-                isActive={isActive} 
+                isActive={isActive}
+                isFormBlocked={isFormBlocked}
             />
             <MoviesCardList 
                 isMobile={isMobile} 
@@ -39,8 +40,6 @@ const SavedMovies = ({
                 isLoading={isLoading} 
                 isError={isError} 
                 isNotFound={isNotFound} 
-                movies={JSON.parse(localStorage.getItem('savedMovies')) || []}
-                savedMovies={savedMovies}
                 onCardButtonClick={onCardButtonClick}
                 isMoviesPage={false}
             />

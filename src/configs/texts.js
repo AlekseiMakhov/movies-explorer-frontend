@@ -34,3 +34,5 @@ export const logoutText = 'Выйти из аккаунта';
 export const promoText = 'Учебный проект студента\nфакультета Веб-разработки';
 export const footerText = 'Учебный проект Яндекс Практикум x BeatFilm';
 export const notFoundText = 'Ничего не найдено';
+
+export const successText = 'Данные успешно обновлены';

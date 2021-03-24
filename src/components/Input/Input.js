@@ -21,19 +21,21 @@ const Input = ({
         <>
             {
                 type === 'profile'
-                ?   <input 
-                        className={cn('input input_type_profile', { 'input_invalid': errorText })} 
-                        placeholder={placeholder} 
-                        value={value||''} 
-                        disabled={isDisabled}
-                        minLength={minLength} 
-                        maxLength={maxLength}
-                        type={inputType}
-                        onChange={onChange}
-                        pattern={pattern}
-                        onInput={onInput}
-                        required 
-                    />
+                    ?   <input 
+                            className={cn('input input_type_profile', { 'input_invalid': errorText })} 
+                            placeholder={placeholder} 
+                            value={value||''} 
+                            name={inputName}
+                            disabled={isDisabled}
+                            minLength={minLength} 
+                            maxLength={maxLength}
+                            type={inputType}
+                            onChange={onChange}
+                            pattern={pattern}
+                            onInput={onInput}
+                            required 
+                        />
+            
                 :   <>
                         <p className='input__text'>{title}</p>
                         <input 
@@ -44,11 +46,12 @@ const Input = ({
                             maxLength={maxLength}
                             value={value||''}
                             type={inputType}
+                            disabled={isDisabled}
                             onChange={onChange}
                             pattern={pattern}
                             required
                         />
-                        <p className='input__text_type_error'>{errorText||''}</p>
+                        <span className='input__text_type_error'>{errorText||''}</span>
                     </>
             }
             

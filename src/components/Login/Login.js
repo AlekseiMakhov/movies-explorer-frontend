@@ -8,12 +8,15 @@ import Welcome from '../Welcome/Welcome';
 import './Login.css';
 
 const Login = ({ 
-    errorText, onLogin, isError 
+    errorText, 
+    onLogin, 
+    isError, 
+    isFormBlocked
 }) => {
 
     const { 
         errors, resetForm, values, isValid, handleChange 
-    } = useValidation();
+    } = useValidation({});
 
     const handleSubmit = e => {
         e.preventDefault();
@@ -39,6 +42,7 @@ const Login = ({
                             errorText={errors?.email}
                             value={values?.email}
                             inputType='email'
+                            isDisabled={isFormBlocked}
                         />
                         <Input 
                             title='Пароль' 
@@ -50,6 +54,7 @@ const Login = ({
                             inputType='password'
                             pattern={PASSWORD_PATTERN}
                             minLength={6}
+                            isDisabled={isFormBlocked}
                         />
                     </>    
                 }
@@ -58,6 +63,7 @@ const Login = ({
                 linkText='Регистрация'
                 destination={signupPage}
                 onSubmit={handleSubmit}
+                disabled={!isValid || isFormBlocked}
             />
         </div>
     )

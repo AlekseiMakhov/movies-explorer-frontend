@@ -10,7 +10,6 @@
     overflow: hidden;
     text-decoration: none;
     color: #000;
-    cursor: pointer;
 }
 
 .movies-card:hover .button_type_delete {
@@ -28,6 +27,7 @@
     background-position: center;
     background-size: cover;
     border: none;
+    cursor: pointer;
 }
 
 .movies-card__info {

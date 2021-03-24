@@ -30,15 +30,6 @@
     bottom: 70px;
 }
 
-.profile__error-text {
-    font-size: 11px;
-    font-weight: 400;
-    line-height: 13px;
-    color: #ee3465;
-    text-align: center;
-    margin: 0 0 20px;
-}
-
 .profile__welcome-text {
     width: 100%;
     font-size: 24px;
@@ -70,6 +61,18 @@
     font-weight: 500;
     text-align: center;
     margin: 0;
+}
+
+.profile__text_type_error {
+    font-weight: 400;
+    color: #ee3465;
+    margin-bottom: 20px;
+}
+
+.profile__text_type_success {
+    font-weight: 400;
+    color: #00f;
+    margin-bottom: 20px;
 }
 
 @media screen and (max-width: 920px) {

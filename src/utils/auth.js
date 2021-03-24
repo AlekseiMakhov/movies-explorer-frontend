@@ -2,7 +2,9 @@ import {
     conflictError, loginError, serverError, tokenNotCorrect, tokenNotRecieved 
 } from '../configs/errors';
 
-import { BASE_URL } from '../configs/constants';
+import { 
+    BAD_REQUEST, BASE_URL, CONFLICT_REQUEST, SERVER_ERROR, UNAUTORIZED 
+} from '../configs/constants';
 
 export const authorize = (email, password) => {
     return fetch(`${BASE_URL}/signin`, {
@@ -14,9 +16,9 @@ export const authorize = (email, password) => {
         body: JSON.stringify({ email, password })
     })
     .then(res => {
-        if (res.status === 400) {
+        if (res.status === BAD_REQUEST) {
             throw new Error(loginError)
-        } else if (res.status === 401) {
+        } else if (res.status === UNAUTORIZED) {
             throw new Error(loginError)
         } else
         return res.json()
@@ -33,9 +35,9 @@ export const register = (email, password, name) => {
         body: JSON.stringify({email, password, name})
     })
     .then(response => {
-        if (response.status === 400) throw new Error(loginError)
-        if (response.status === 409) throw new Error(conflictError)
-        if (response.status === 500) throw new Error(serverError) 
+        if (response.status === BAD_REQUEST) throw new Error(loginError)
+        if (response.status === CONFLICT_REQUEST) throw new Error(conflictError)
+        if (response.status === SERVER_ERROR) throw new Error(serverError) 
         return response.json()
     })
     .then(res => res)
@@ -51,9 +53,9 @@ export const tokenCheck = (token) => {
         }
     })
     .then(res => {
-        if (res.status === 400) {
+        if (res.status === BAD_REQUEST) {
             throw new Error(tokenNotRecieved)
-        } else if (res.status === 401) {
+        } else if (res.status === UNAUTORIZED) {
             throw new Error(tokenNotCorrect)
         } else
         return res.json()

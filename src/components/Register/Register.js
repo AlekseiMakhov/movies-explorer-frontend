@@ -8,12 +8,15 @@ import './Register.css';
 import useValidation from '../../hooks/useValidation';
 
 const Register = ({ 
-    onRegister, isError, errorText 
+    onRegister, 
+    isError, 
+    errorText,
+    isFormBlocked
 }) => {
 
     const { 
         errors, resetForm, values, isValid, handleChange 
-    } = useValidation();
+    } = useValidation({});
 
     const handleSubmit = e => {
         e.preventDefault();
@@ -42,6 +45,7 @@ const Register = ({
                             minLength={2}
                             maxLength={30}
                             pattern={NAME_PATTERN}
+                            isDisabled={isFormBlocked}
                         />
                         <Input 
                             title='E-mail' 
@@ -51,6 +55,7 @@ const Register = ({
                             errorText={errors?.email}
                             value={values?.email}
                             inputType='email'
+                            isDisabled={isFormBlocked}
                         />
                         <Input 
                             title='Пароль' 
@@ -62,6 +67,7 @@ const Register = ({
                             inputType='password'
                             pattern={PASSWORD_PATTERN}
                             minLength={6}
+                            isDisabled={isFormBlocked}
                         />
                     </>
                 }
@@ -70,7 +76,7 @@ const Register = ({
                 linkText='Войти'
                 destination={signinPage}
                 onSubmit={handleSubmit}
-                disabled={!isValid}
+                disabled={!isValid || isFormBlocked}
             />
         </div>
     )

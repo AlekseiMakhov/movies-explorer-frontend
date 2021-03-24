@@ -1,4 +1,7 @@
 import { useState } from 'react';
+import { 
+    DESKTOP_CARDS_COUNT, INCREASE_COUNT, MOBILE_CARDS_COUNT, MOBILE_INCREASE_COUNT, TABLET_CARDS_COUNT 
+} from '../../configs/constants';
 import { someError } from '../../configs/errors';
 import { notFoundText } from '../../configs/texts';
 import Button from '../Button/Button';
@@ -12,14 +15,16 @@ const MoviesCardList = ({
     isLoading, 
     isError, 
     isNotFound, 
+    savedMovies,
     onCardButtonClick, 
-    movies, 
-    savedMovies, 
     isMoviesPage,
 }) => {
 
-    const [moviesCount, setMoviesCount] = useState(isMobile ? 5 : isTablet ? 8 : 12);
-    const icreaseCount = _ => setMoviesCount(isMobile||isTablet ? moviesCount+2 : moviesCount+3);
+    const [moviesCount, setMoviesCount] = useState(isMobile ? MOBILE_CARDS_COUNT : isTablet ? TABLET_CARDS_COUNT : DESKTOP_CARDS_COUNT);
+    const icreaseCount = _ => setMoviesCount(isMobile||isTablet ? moviesCount+MOBILE_INCREASE_COUNT : moviesCount+INCREASE_COUNT);
+
+    const cards = JSON.parse(localStorage.getItem(isMoviesPage ? 'movies' : 'savedMovies'));
+    // const savedMovies = JSON.parse(localStorage.getItem('savedMovies'));
 
     return (
         <section className='movies-card-list'>
@@ -29,7 +34,7 @@ const MoviesCardList = ({
             {
                 !(isLoading||isNotFound||isError)
                     && ( <div className='movies-card-list__content'>
-                            {(movies||[]).slice(0, moviesCount).map(movie =>
+                            {(cards||[]).slice(0, moviesCount).map(movie =>
                             <>
                                 <MoviesCard 
                                     key={isMoviesPage ? ''+movie.id : movie._id}
@@ -43,7 +48,7 @@ const MoviesCardList = ({
                         </div>)
             }
             {
-                movies?.length > moviesCount && <Button caption='Ещё' type='more' onClick={icreaseCount} />
+                cards?.length > moviesCount && <Button caption='Ещё' type='more' onClick={icreaseCount} />
             }
 
         </section>
