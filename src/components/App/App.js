@@ -112,6 +112,7 @@ function App() {
                 checkToken();
                 setIsError(false);
                 setErrorText('');
+                history.push(moviesPage);
             }
         })
         .catch(err => {
@@ -127,9 +128,9 @@ function App() {
     register(email, password, name)
       .then((res) => {
           if (res.id) {
-              history.push(signinPage);
-              setIsError(false);
-              setErrorText('');
+            onLogin(email, password);
+            setIsError(false);
+            setErrorText('');
           }                   
       })
       .catch((err) => {

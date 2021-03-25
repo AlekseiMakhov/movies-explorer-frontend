@@ -28,7 +28,7 @@ const Profile = ({
     const [isEditActive, setIsEditActive] = useState(false);
 
     const {
-        errors, values, isValid, handleChange 
+        errors, values, isValid, handleChange
     } = useValidation({ name: currentUser.name, email: currentUser.email });
 
     const editProfile = _ => setIsEditActive(true);
@@ -41,7 +41,9 @@ const Profile = ({
     const onInput = _ => setIsButtonDisabled(false);
 
     return (
+        
         <>
+
             <Header 
                 type='white' 
                 loggedIn={true} 
@@ -49,6 +51,7 @@ const Profile = ({
                 isTablet={isTablet} 
                 openMenu={openMenu}
             />
+
             <section className='profile'>
                 <div className='profile__content'>
                     <h3 className='profile__welcome-text'>Привет, {currentUser.name}!</h3>
@@ -63,7 +66,7 @@ const Profile = ({
                                 placeholder='имя'
                                 inputName='name'
                                 onChange={handleChange}
-                                value={values?.name}
+                                value={values.name}
                                 inputType='text'
                                 onInput={onInput}
                                 minLength={2}
@@ -81,7 +84,7 @@ const Profile = ({
                                 placeholder='email' 
                                 inputName='email'
                                 onChange={handleChange}
-                                value={values?.email}
+                                value={values.email}
                                 inputType='email'
                                 onInput={onInput}
                             />
@@ -118,7 +121,8 @@ const Profile = ({
                     </form>
                 </div>
             </section>
-        </>
+ 
+        </>                           
     )
 }
 

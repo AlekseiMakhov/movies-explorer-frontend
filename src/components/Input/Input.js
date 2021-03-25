@@ -24,7 +24,7 @@ const Input = ({
                     ?   <input 
                             className={cn('input input_type_profile', { 'input_invalid': errorText })} 
                             placeholder={placeholder} 
-                            value={value||''} 
+                            value={value || ''}
                             name={inputName}
                             disabled={isDisabled}
                             minLength={minLength} 
