@@ -1,22 +1,69 @@
+import { useEffect } from 'react';
+import { PASSWORD_PATTERN } from '../../configs/constants';
+import { signupPage } from '../../configs/links';
+import useValidation from '../../hooks/useValidation';
 import Form from '../Form/Form';
 import Input from '../Input/Input';
 import Welcome from '../Welcome/Welcome';
 import './Login.css';
 
-const Login = () => {
+const Login = ({ 
+    errorText, 
+    onLogin, 
+    isError, 
+    isFormBlocked
+}) => {
+
+    const { 
+        errors, resetForm, values, isValid, handleChange 
+    } = useValidation({});
+
+    const handleSubmit = e => {
+        e.preventDefault();
+        isValid && onLogin(values.email, values.password);
+    }
+
+    useEffect(_ => resetForm(),[]);
+
     return (
         <div className='login'>
-            <Welcome welcomeText='Рады видеть!'/>
+            <Welcome welcomeText='Добро пожаловать!'/>
             <Form 
-                errorText='Что-то пошло не так...'
+                formName='registerForm'
+                isError={isError}
+                errorText={errorText}
                 children={
                     <>
-                        <Input title='E-mail' placeholder='email' errorText=''/>
-                        <Input title='Пароль' placeholder='пароль' errorText=''/>
-                    </>
+                        <Input 
+                            title='E-mail' 
+                            placeholder='email' 
+                            inputName='email'
+                            onChange={handleChange}
+                            errorText={errors?.email}
+                            value={values?.email}
+                            inputType='email'
+                            isDisabled={isFormBlocked}
+                        />
+                        <Input 
+                            title='Пароль' 
+                            placeholder='пароль'
+                            inputName='password'
+                            onChange={handleChange}
+                            errorText={errors?.password}
+                            value={values?.password}
+                            inputType='password'
+                            pattern={PASSWORD_PATTERN}
+                            minLength={6}
+                            isDisabled={isFormBlocked}
+                        />
+                    </>    
                 }
-                questionText='Уже зарегистрированы?'
-                linkText='Войти'
+                buttonText='Войти'
+                questionText='Еще не зарегистрированы?'
+                linkText='Регистрация'
+                destination={signupPage}
+                onSubmit={handleSubmit}
+                disabled={!isValid || isFormBlocked}
             />
         </div>
     )

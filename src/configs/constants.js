@@ -1,145 +1,23 @@
-export const movies = [
-    {
-        id: 1,
-        nameRU: '33 слова о дизайне',
-        nameEN: 'Shawshank redemption',
-        country: 'USA',
-        year: 1991,
-        duration: 242,
-        descripion: '123',
-        trailer: 'https://www.kinopoisk.ru/film/326/',
-        image: 'https://avatars.mds.yandex.net/get-kinopoisk-image/1599028/0b76b2a2-d1c7-4f04-a284-80ff7bb709a4/300x450',
-        thumbnail: 'https://avatars.mds.yandex.net/get-kinopoisk-image/1599028/0b76b2a2-d1c7-4f04-a284-80ff7bb709a4/300x450',
-        owner: '123123123123123123123'
-    },
-    {
-        id: 2,
-        nameRU: 'Побег из Шоушенка',
-        nameEN: 'Shawshank redemption',
-        country: 'USA',
-        year: 1991,
-        duration: 242,
-        descripion: '123',
-        trailer: 'https://www.kinopoisk.ru/film/326/',
-        image: 'https://avatars.mds.yandex.net/get-kinopoisk-image/1599028/0b76b2a2-d1c7-4f04-a284-80ff7bb709a4/300x450',
-        thumbnail: 'https://avatars.mds.yandex.net/get-kinopoisk-image/1599028/0b76b2a2-d1c7-4f04-a284-80ff7bb709a4/300x450',
-        owner: '123123123123123123123'
-    },
-    {
-        id: 3,
-        nameRU: 'Побег из Шоушенка',
-        nameEN: 'Shawshank redemption',
-        country: 'USA',
-        year: 1991,
-        duration: 242,
-        descripion: '123',
-        trailer: 'https://www.kinopoisk.ru/film/326/',
-        image: 'https://avatars.mds.yandex.net/get-kinopoisk-image/1599028/0b76b2a2-d1c7-4f04-a284-80ff7bb709a4/300x450',
-        thumbnail: 'https://avatars.mds.yandex.net/get-kinopoisk-image/1599028/0b76b2a2-d1c7-4f04-a284-80ff7bb709a4/300x450',
-        owner: '123123123123123123123'
-    },
-    {
-        id: 4,
-        nameRU: 'Побег из Шоушенка',
-        nameEN: 'Shawshank redemption',
-        country: 'USA',
-        year: 1991,
-        duration: 242,
-        descripion: '123',
-        trailer: 'https://www.kinopoisk.ru/film/326/',
-        image: 'https://avatars.mds.yandex.net/get-kinopoisk-image/1599028/0b76b2a2-d1c7-4f04-a284-80ff7bb709a4/300x450',
-        thumbnail: 'https://avatars.mds.yandex.net/get-kinopoisk-image/1599028/0b76b2a2-d1c7-4f04-a284-80ff7bb709a4/300x450',
-        owner: '123123123123123123123'
-    },
-    {
-        id: 5,
-        nameRU: 'Побег из Шоушенка',
-        nameEN: 'Shawshank redemption',
-        country: 'USA',
-        year: 1991,
-        duration: 242,
-        descripion: '123',
-        trailer: 'https://www.kinopoisk.ru/film/326/',
-        image: 'https://avatars.mds.yandex.net/get-kinopoisk-image/1599028/0b76b2a2-d1c7-4f04-a284-80ff7bb709a4/300x450',
-        thumbnail: 'https://avatars.mds.yandex.net/get-kinopoisk-image/1599028/0b76b2a2-d1c7-4f04-a284-80ff7bb709a4/300x450',
-        owner: '123123123123123123123'
-    },
-    {
-        id: 6,
-        nameRU: 'Побег из Шоушенка',
-        nameEN: 'Shawshank redemption',
-        country: 'USA',
-        year: 1991,
-        duration: 242,
-        descripion: '123',
-        trailer: 'https://www.kinopoisk.ru/film/326/',
-        image: 'https://avatars.mds.yandex.net/get-kinopoisk-image/1599028/0b76b2a2-d1c7-4f04-a284-80ff7bb709a4/300x450',
-        thumbnail: 'https://avatars.mds.yandex.net/get-kinopoisk-image/1599028/0b76b2a2-d1c7-4f04-a284-80ff7bb709a4/300x450',
-        owner: '123123123123123123123'
-    },
-    {
-        id: 7,
-        nameRU: 'Побег из Шоушенка',
-        nameEN: 'Shawshank redemption',
-        country: 'USA',
-        year: 1991,
-        duration: 242,
-        descripion: '123',
-        trailer: 'https://www.kinopoisk.ru/film/326/',
-        image: 'https://avatars.mds.yandex.net/get-kinopoisk-image/1599028/0b76b2a2-d1c7-4f04-a284-80ff7bb709a4/300x450',
-        thumbnail: 'https://avatars.mds.yandex.net/get-kinopoisk-image/1599028/0b76b2a2-d1c7-4f04-a284-80ff7bb709a4/300x450',
-        owner: '123123123123123123123'
-    },
-    {
-        id: 8,
-        nameRU: 'Побег из Шоушенка',
-        nameEN: 'Shawshank redemption',
-        country: 'USA',
-        year: 1991,
-        duration: 242,
-        descripion: '123',
-        trailer: 'https://www.kinopoisk.ru/film/326/',
-        image: 'https://avatars.mds.yandex.net/get-kinopoisk-image/1599028/0b76b2a2-d1c7-4f04-a284-80ff7bb709a4/300x450',
-        thumbnail: 'https://avatars.mds.yandex.net/get-kinopoisk-image/1599028/0b76b2a2-d1c7-4f04-a284-80ff7bb709a4/300x450',
-        owner: '123123123123123123123'
-    },
-    {
-        id: 9,
-        nameRU: 'Побег из Шоушенка',
-        nameEN: 'Shawshank redemption',
-        country: 'USA',
-        year: 1991,
-        duration: 242,
-        descripion: '123',
-        trailer: 'https://www.kinopoisk.ru/film/326/',
-        image: 'https://avatars.mds.yandex.net/get-kinopoisk-image/1599028/0b76b2a2-d1c7-4f04-a284-80ff7bb709a4/300x450',
-        thumbnail: 'https://avatars.mds.yandex.net/get-kinopoisk-image/1599028/0b76b2a2-d1c7-4f04-a284-80ff7bb709a4/300x450',
-        owner: '123123123123123123123'
-    },
-    {
-        id: 10,
-        nameRU: 'Побег из Шоушенка',
-        nameEN: 'Shawshank redemption',
-        country: 'USA',
-        year: 1991,
-        duration: 242,
-        descripion: '123',
-        trailer: 'https://www.kinopoisk.ru/film/326/',
-        image: 'https://avatars.mds.yandex.net/get-kinopoisk-image/1599028/0b76b2a2-d1c7-4f04-a284-80ff7bb709a4/300x450',
-        thumbnail: 'https://avatars.mds.yandex.net/get-kinopoisk-image/1599028/0b76b2a2-d1c7-4f04-a284-80ff7bb709a4/300x450',
-        owner: '123123123123123123123'
-    },
-    {
-        id: 11,
-        nameRU: 'Побег из Шоушенка',
-        nameEN: 'Shawshank redemption',
-        country: 'USA',
-        year: 1991,
-        duration: 142,
-        descripion: '123',
-        trailer: 'https://www.kinopoisk.ru/film/326/',
-        image: 'https://avatars.mds.yandex.net/get-kinopoisk-image/1599028/0b76b2a2-d1c7-4f04-a284-80ff7bb709a4/300x450',
-        thumbnail: 'https://avatars.mds.yandex.net/get-kinopoisk-image/1599028/0b76b2a2-d1c7-4f04-a284-80ff7bb709a4/300x450',
-        owner: '123123123123123123123'
-    }
-]
+export const BASE_URL = 'https://api.chosen-one.students.nomoredomains.rocks';
+export const MOVIES_BASE_URL = 'https://api.nomoreparties.co';
+
+export const SHORT_MOVIES_DURATION = 40;
+
+export const NAME_PATTERN = '\\S+';
+export const PASSWORD_PATTERN = '\\S+';
+
+export const MOBILE_CARDS_COUNT = 5;
+export const TABLET_CARDS_COUNT = 8;
+export const DESKTOP_CARDS_COUNT = 12;
+
+export const MOBILE_INCREASE_COUNT = 2;
+export const INCREASE_COUNT = 3;
+
+export const ERROR_CODE = 1;
+export const SUCCESS_CODE = 2;
+
+export const BAD_REQUEST = 400;
+export const CONFLICT_REQUEST = 409;
+export const UNAUTORIZED = 401;
+export const SERVER_ERROR = 500;
+export const NOT_FOUND = 404;

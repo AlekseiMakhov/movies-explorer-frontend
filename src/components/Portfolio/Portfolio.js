@@ -1,4 +1,7 @@
-import { staticSiteLink, adaptiveSiteLink, oneSiteApp } from '../../configs/links';
+import { 
+    staticSiteLink, adaptiveSiteLink, oneSiteApp 
+} from '../../configs/links';
+
 import './Portfolio.css';
 
 const Portfolio = () => {

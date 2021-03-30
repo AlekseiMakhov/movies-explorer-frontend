@@ -1,5 +1,5 @@
-import { aboutProjectSub1,
-    aboutProjectSub2, aboutProjectText1, aboutProjectText2 
+import { 
+    aboutProjectSub1, aboutProjectSub2, aboutProjectText1, aboutProjectText2 
 } from '../../configs/texts';
 import './AboutProject.css';
 

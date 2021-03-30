@@ -9,7 +9,7 @@
     position: relative;
     margin: 0 auto;
     max-width: 1140px;
-    min-width: 320px;
+    min-width: 284px;
     padding: 0 70px;
     justify-self: center;
     align-items: center;
@@ -63,19 +63,21 @@
     margin-right: 0;
 }
 
-@media screen and (max-width: 1280px) {
+@media screen and (max-width: 920px) {
 
     .techs {
         padding-bottom: 90px;
     }
 
     .techs__content {
-        padding: 0 50px;
+        margin: 0 50px;
+        padding: 0;
     }
 
     .techs__list-element {
         width: 84px;
         height: 37px;
+        margin-bottom: 10px;
     }
 
     .techs__title {
@@ -93,14 +95,14 @@
     }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 620px) {
 
     .techs {
         padding: 60px 0 70px;
     }
 
     .techs__content {
-        padding: 0 18px;
+        margin: 0 18px;
     }
 
     .techs__title {

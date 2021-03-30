@@ -25,3 +25,24 @@
 .navigation__link_active {
     font-weight: 600;
 }
+
+.navigation__link_type_side {
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: 500;
+    text-decoration: none;
+    padding-bottom: 7px;
+    color: #000;
+    margin-bottom: 22px;
+    text-align: center;
+    width: auto;
+}
+
+.navigation__link_type_side_active {
+    border-bottom: 1px solid #000;
+}
+
+.navigation_type_side {
+    flex-direction: column;
+    align-items: center;
+}

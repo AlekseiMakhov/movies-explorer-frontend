@@ -18,4 +18,6 @@
 * Git
 * Webpack
 * npm
-* библиотека classNames
+
+Ссылки: _http://chosen-one.students.nomoredomains.rocks_, 
+        _https://chosen-one.students.nomoredomains.rocks_

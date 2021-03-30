@@ -27,14 +27,14 @@
     margin: auto 17px auto 0;
 }
 
-@media screen and (max-width: 1280px) {
+@media screen and (max-width: 920px) {
 
     .account {
         margin: 0 0 92px;
     }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 620px) {
 
     .account {
         margin: 0 0 46px;

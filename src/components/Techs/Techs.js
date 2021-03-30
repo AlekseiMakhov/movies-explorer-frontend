@@ -1,4 +1,6 @@
-import { techsText, techsTitle, techsCaption } from '../../configs/texts';
+import { 
+    techsText, techsTitle, techsCaption 
+} from '../../configs/texts';
 import './Techs.css';
 
 const Techs = () => {

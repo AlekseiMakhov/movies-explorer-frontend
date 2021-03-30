@@ -10,7 +10,7 @@
     position: relative;
     margin: 0 auto;
     max-width: 1140px;
-    min-width: 320px;
+    min-width: 284px;
     padding: 0 70px;
     justify-self: center;
 }
@@ -25,7 +25,7 @@
 
 .about-me__info {
     text-align: left;
-    max-width: 600px;
+    max-width: calc(100% - 340px);
     display: flex;
     flex-direction: column;
     justify-content: stretch;
@@ -77,15 +77,17 @@
 .about-me__photo {
     width: 270px;
     height: 327px;
+    background-position: center;
     border-radius: 10px;
     background-size: cover;
     background-image: url(../../images/myPhoto.jpg);
 }
 
-@media screen and (max-width: 1280px) {
+@media screen and (max-width: 920px) {
 
     .about-me__content {
-        padding: 0 50px;
+        margin: 0 50px;
+        padding: 0;
     }
 
     .about-me__photo {
@@ -94,7 +96,7 @@
     }
 
     .about-me__info {
-        max-width: 364px;
+        max-width: calc(100% - 300px);
     }
 
     .about-me__name {
@@ -115,10 +117,10 @@
     }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 620px) {
 
     .about-me__content {
-        padding: 0 18px;
+        margin: 0 18px;
     }
 
     .about-me__photo {

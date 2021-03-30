@@ -19,7 +19,7 @@
     height: 100%;
     margin: 0 auto;
     max-width: 1140px;
-    min-width: 320px;
+    min-width: 292px;
     display: flex;
     justify-content: space-between;
     padding: 0 70px;
@@ -65,15 +65,16 @@
     opacity: .7;
 }
 
-@media screen and (max-width: 1280px) {
+@media screen and (max-width: 920px) {
     .header__content {
-        padding: 0 30px;
+        margin: 0 30px;
+        padding: 0;
     }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 620px) {
     .header__content {
-        padding: 0 14px;
+        margin: 0 14px;
     }
 
     .header__link {

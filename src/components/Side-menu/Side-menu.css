@@ -47,7 +47,7 @@
     align-items: center;
 }
 
-.side-menu__link {
+/* .side-menu__link {
     font-size: 18px;
     line-height: 22px;
     font-weight: 500;
@@ -63,9 +63,9 @@
 
 .side-menu__link_active {
     border-bottom: 1px solid #000;
-}
+} */
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 620px) {
     .side-menu__container {
         width: 100%;
     }
